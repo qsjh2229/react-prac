@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from './Card';
+import Card from '../UI/Card'
 import Expenseitem from './Expenseitem';
 import'./Expense.css'
 
