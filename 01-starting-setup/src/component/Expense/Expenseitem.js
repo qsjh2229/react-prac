@@ -4,7 +4,9 @@ import ExpenseDatee from "./ExpenseDatee";
 import Card from "../UI/Card";
 function Expenseitem(props) {
  
-const [title, seTitle] =   useState(props.title);
+const [title, seTitle] = useState(props.title);
+console.log(title)
+
   
   const ClickHandler = () => {
     seTitle('하ㅣㅇ허아')
@@ -16,6 +18,7 @@ const [title, seTitle] =   useState(props.title);
       <ExpenseDatee date={props.date}></ExpenseDatee>
       <div className="expense-item__description">
         <h2>{title}</h2>
+       
         <div className="expense-item__price">${props.amount}</div>
       </div>
       <button onClick={ClickHandler}> cladng TITLE</button>
